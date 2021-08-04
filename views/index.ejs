@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/main.css">
+
+    <title>الإعراب المبسّط</title>
+  </head>
+  <body>
+
+    <div class="intro  shadow-sm d-inline-flex p-2 bd-highlight justify-content-between ">
+      <img src="/q.jpg" />
+
+      <div class="introDiv align-self-center  d-flex align-items-start flex-column bd-highlight mb-3 " style="border-top: solid #941E17 1px;">
+<h1 class="mt-3">الإعراب <br /> المبسّط</h1>
+<p class=" paragraph my-3" >
+  عرض مبسط وشامل لقواعد اللغة العربية المتعلقة بالبناء والإعراب. هدفنا هو توضيح الهيكل الكلي لأقسام الإعراب لئلا يتيه طالب العلم في بحر التفاصيل دون تصور واضح. يسعدنا سماع رأيك وملاحظاتك، وسوف نسعد أكثر إذا شاركتنا مثالا من عندك على إحدى الحالات الإعرابية. في انتظاركم! </p>
+<div class="buttons">
+<button onclick="showAlll()" id="showAll" class="btn" style="background-color: #941E17; color: #fff;"> أظهر الكل</button>
+<button  onClick="document.getElementById('middle').scrollIntoView(); document.getElementById('create-field').focus();" class="btn" style="background-color: #fff;  color: #941E17; border: solid #941E17 1px">شاركنا رأيك</button>
+</div>
+</div>
+
+    </div>
+
+
+<div class="main">
+
+<header onclick="show(this)" class="border-bottom jumbotron p-3 shadow-sm">
+  <h1>الأسماء المعربة</h1>
+</header>
+
+
+
+<section class="disappear">
+
+<h3 onclick="show(this)" class="raf">المرفوعات</h3>
+<ol class="div1 disappear">
+  <li onclick="show(this)" id="id1">المبتدأ والخبر.</li>
+  <ul class="ex">
+    <li  onclick="show(this)">الولد<span class="raf">ا</span>ن ذكيّ<span class="raf">ا</span>ن.</li>
+    <small>مبتدأ مرفوع وعلامة رفعه الألف لأنه مثنى.<br> خبر مرفوع وعلامة رفعه الألف لأنه مثنى.</small>
+    <li onclick="show(this)">الرسو<span class="raf">لُ</span> مصطف<span class="raf">ى</span>.</li>
+    <small>مبتدأ مرفرع وعلامة رفعة الضمة الظاهرة.<br> خبر مرفوع وعلامة رفعه الضمة المقدرة لأنه اسم مقصور.</small>
+
+    <li onclick="show(this)">البنا<span class="raf">تُ</span> سعيدا<span class="raf">تٌ</span>.</li>
+    <small>مبتدأ مرفرع وعلامة رفعة الضمة الظاهرة.<br> خبر مرفوع وعلامة رفعه الضمة الظاهرة.</small>
+
+<br />
+  </ul>
+  <li onclick="show(this)" >اسم كان.</li>
+  <ul class="ex">
+    <li  onclick="show(this)" >كان أب<span class="raf">و</span>هما صالحاً.</li>
+    <small>اسم كان مرفوع وعلامة رفعه الواو لأنه من الأسماء الخمسة.</small>
+
+    <li  onclick="show(this)">كان القاض<span>ي</span> عادلاً.</li>
+    <small>اسم كان مرفوع وعلامة رفعه الضمة المقدرة لأنه اسم منقوص.</small>
+
+    <br />
+
+  </ul>
+  <li onclick="show(this)">خبر إن.</li>
+  <ul class="ex">
+    <li  onclick="show(this)">إنّ الأولادَ جائع<span class="raf">و</span>ن.</li>
+    <small>خبر إن مرفوع وعلامة رفعه الواو لأنه جمع مذكر سالم.</small>
+
+    <br />
+
+  </ul>
+  <li onclick="show(this)">الفاعل.</li>
+  <ul class="ex">
+    <li  onclick="show(this)">جاء الأبنا<span class="raf">ءُ</span>.</li>
+    <small>فاعل مرفوع وعلامة رفعه الضمة الظاهرة.</small>
+
+    <li  onclick="show(this)">ضحِك صديق<span>ي</span>.</li>
+    <small>فاعل مرفوع وعلامة رفعه الضمة المقدرة لأنه مضاف إلى ياء المتكلم.</small>
+
+    <br />
+
+  </ul>
+  <li onclick="show(this)">نائب الفاعل.</li>
+  <ul class="ex">
+    <li  onclick="show(this)">أُمِر إبراهي<span class="raf" >مُ</span> بذبح ابنه.</li>
+    <small>نائب فاعل مرفوع وعلامة رفعه الضمة الظاهرة.</small>
+
+    <br />
+
+  </ul>
+</ol>
+
+
+
+
+
+
+
+
+
+
+<h3 onclick="show(this)" class="nas">المنصوبات</h3>
+<ol class="div1 disappear">
+  <li onclick="show(this)"> المفعول به</li>
+  <ul class="ex">
+    <li onclick="show(this)">رأيت الأولا<span class="nas">دَ</span> والبنا<span class="nas">تِ</span>.</li>
+    <small>مفعول به منصوب وعلامة نصبه الفتحة لأنه جمع تكسير. <br /> مفعول به منصوب وعلامة نصبه الكسرة لأنه جمع مؤنث سالم.</small>
+
+  </ul>
+  <li onclick="show(this)"> المفعول المطلق</li>
+  <ul class="ex">
+    <li onclick="show(this)">شربت الماء شرب<span class="nas">اً</span>.</li>
+    <small>مفعول مطلق منصوب وعلامة نصبه الفتحة.</small>
+
+  </ul>
+  <li onclick="show(this)"> المفعول لأجله</li>
+  <ul class="ex">
+    <li onclick="show(this)">سافرت طلب<span class="nas">اً</span> للعلم.</li>
+    <small>مفعول لأجله منصوب وعلامة نصبه الفتحة.</small>
+
+  </ul>
+  <li onclick="show(this)"> المفعول فيه</li>
+  <ul class="ex">
+    <li onclick="show(this)">وصلت البيت عصر<span class="nas">اً</span>.</li>
+    <small>مفعول فيه منصوب وعلامة نصبه الفتحة.</small>
+  </ul>
+
+  <li onclick="show(this)"> المفعول معه</li>
+  <ul class="ex">
+    <li onclick="show(this)">سرت والجب<span class="nas">لَ</span>.</li>
+    <small>مفعول معه منصوب وعلامة نصبه الفتحة.</small>
+
+  </ul>
+
+  <li onclick="show(this)">خبر كان</li>
+  <ul class="ex">
+    <li onclick="show(this)">صار الجنديان ضابط<span class="nas">يـ</span>ن.</li>
+    <small>خبر كان منصوب وعلامة نصبه الياء لأنه مثنى.</small>
+
+    <li onclick="show(this)">صار الولدُ صديق<span class="nas">ي</span>.</li>
+    <small>خبر كان منصوب وعلامة نصبه الضمة المقدرة لأنه اسم مقصور.</small>
+
+
+  </ul>
+  <li onclick="show(this)">اسم إن</li>
+  <ul class="ex">
+    <li onclick="show(this)">إن المعلم<span class="nas">يـ</span>ن مأجورون.</li>
+    <small>اسم إن منصوب وعلامة نصبه الياء لأنه جمع مذكر سالم.</small>
+
+    <li onclick="show(this)">إن المحام<span class="nas">يَ</span> صبورٌ.</li>
+    <small>اسم إن منصوب وعلامة نصبه الفتحة لأنه اسم منقوص.</small>
+
+  </ul>
+  <li onclick="show(this)">الحال</li>
+  <ul class="ex">
+    <li onclick="show(this)">ينام الحصان واقف<span class="nas">اً</span>.</li>
+    <small>حال منصوبة وعلامة نصبها الفتحة.</small>
+
+  </ul>
+  <li onclick="show(this)">التمييز</li>
+  <ul class="ex">
+    <li onclick="show(this)">أنا أكثر منك مالـ<span class="nas">اً</span>.</li>
+    <small>تمييز منصوب وعلامة نصبه الفتحة.</small>
+
+  </ul>
+  <li onclick="show(this)">المنادى</li>
+  <ul class="ex">
+    <li onclick="show(this)">يا أخ<span class="nas">ا</span> العرب.</li>
+    <small>منادى منصوب وعلامة نصبه الألف لأنه من الأسماء الخمسة.</small>
+
+  </ul>
+  <li onclick="show(this)">المستثنى</li>
+  <ul class="ex">
+    <li onclick="show(this)">أُغلقت المباني إلا المساج<span class="nas">دَ</span> والمدار<span class="nas">سَ</span>.</li>
+    <small>مستثنى منصوب وعلامة نصبه الفتحة لأنه ممنوع من الصرف.</small>
+  </ul>
+</ol>
+
+
+
+<h3 onclick="show(this)" class="jar">المجرورات</h3>
+<ol class="div1 disappear">
+  <li onclick="show(this)">الإضافة</li>
+  <ul class="ex">
+    <li onclick="show(this)">الجنة تحت أقدامِ الأمها<span class="jar">تِ</span></li>
+    <small>مضاف إليه مجرور وعلامة الكسرة الظاهرة.</small>
+    <li onclick="show(this)">حكم القاض<span class="jar">ي</span> عادلٌ.</li>
+    <small>مضاف إليه مجرور وعلامة الكسرة المقدرة لأنه اسم منقوص.</small>
+  </ul>
+  <li onclick="show(this)">حرف الجر</li>
+  <ul class="ex">
+    <li onclick="show(this)">مرَرت بإبراهي<span class="jar">مَ</span> وأخ<span class="jar">ي</span>ه.</li>
+    <small>اسم مجرور وعلامة جرّه الفتحة لأنه ممنوع من الصرف. <br /> اسم مجرور وعلامة جره الياء لأنه من الأسماء الخمسة.</small>
+    <li onclick="show(this)">أمر الله بالإحسان إلى الوالد<span class="jar">ي</span>ن والأقرب<span class="jar">يـ</span>ن.</li>
+    <small>اسم مجرور وعلامة جرّه الياء لأنه مثنى. <br /> اسم مجرور وعلامة جرّه الياء لأنه جمع مذكر سالم.</small>
+    <li onclick="show(this)">اتصلت بصديق<span class="jar">ي</span> خال<span class="jar">دٍ</span> المصطف<span class="jar">ى</span>.</li>
+    <small>اسم مجرور وعلامة جره الكسرة المقدرة لأنه مضاف إلى ياء المتكلم. <br /> بدل مجرور وعلامة جره الكسرة الظاهرة. <br /> صفة مجرورة وعلامة جرها الكسرة المقدرة لأنها اسم مقصور.</small>
+  </ul>
+</ol>
+
+  <h3 onclick="show(this)" class="tab">التوابع</h3>
+  <ol class="div1 disappear">
+    <li onclick="show(this)">النعت</li>
+    <ul class="ex">
+      <li onclick="show(this)">هذا دفتر الطالبِ الجدي<span class="tab">دِ</span></li>
+      <small>نعت مجرور وعلامة جره الكسرة الظاهرة.</small>
+    </ul>
+    <li onclick="show(this)">التوكيد</li>
+    <ul class="ex">
+      <li onclick="show(this)">حضر الطلاب ك<span class="jar">لُّ</span>هم.</li>
+      <small>توكيد مرفوع بالضمة.</small>
+    </ul>
+    <li onclick="show(this)">العطف</li>
+    <ul class="ex">
+      <li onclick="show(this)">رأيت زيداً وخالد<span class="jar">اً</span></li>
+      <small>معطوف منصوب بالفتحة.</small>
+    </ul>
+    <li onclick="show(this)">البدل</li>
+    <ul class="ex">
+      <li onclick="show(this)">اللهم صلّ على محمدً النب<span class="jar">ِّيِّ</span> المصطفى.</li>
+      <small>بدل مجرور وعلامة جره الكسرة.</small>
+    </ul>
+  </ol>
+
+
+</section>
+
+<header onclick="show(this)" class="border-bottom jumbotron p-3 shadow-sm">
+  <h1>الأسماء المبنية</h1>
+</header>
+
+
+
+<section  class="disappear">
+  <p  onclick="show(this)"> 
+الأسماء كلها معربة ما عدا الفئات التالية:
+</p>
+<ol class="div1 disappear">
+  <li onclick="show(this)"> الضمائر.</li>
+  <ul class="ex">
+    <li > <span class="raf">ضمائر الرفع،</span>مثل: هو، هي، هم، أنت، أنتم، أنا. </li>
+
+    <li > <span class="nas">ضمائر النصب</span> مثل: رأيت<span class="nas">ه</span>، أسأل<span class="nas">ك</span> ، ضربن<span class="nas">ي</span>.</li>
+
+    <li > <span class="jar">ضمائر الجر</span> مثل: كتاب<span class="jar">ه</span>، دفتر<span class="jar">ها</span>، اسم<span class="jar">ك</span>، علي<span class="jar">ها</span>.</li>
+  </ul>
+
+<li onclick="show(this)"> أسماء الإشارة.</li>
+  <ul class="ex">
+    <li > مثل: هذا، هذه، ذلك، أولئك. <span class="jar"> *هذان وهاتان معربان.</span>
+    </li>
+  </ul>
+
+  <li onclick="show(this)"> أسماء الاستفهام.</li>
+  <ul class="ex">
+    <li > مثل: منْ، أينَ، ما، متى كيفَ.
+    </li>
+  </ul>
+
+
+  <li onclick="show(this)"> الأسماء الموصولة.</li>
+  <ul class="ex">
+    <li > مثل: الذي، التي، الذين. <span class="jar"> *اللذان واللتان معربان.</span>
+    </li>
+  </ul>
+
+  <li onclick="show(this)"> بعض الظروف.</li>
+  <ul class="ex">
+    <li > مثل: إذا، الآن، حيث، أمس.
+    </li>
+  </ul>
+
+  <li onclick="show(this)"> أسماء الأفعال.</li>
+  <ul class="ex">
+    <li > مثل: آمين، أفّ، آه.
+    </li>
+  </ul> 
+
+  <li onclick="show(this)"> الأعداد المركبة.</li>
+  <ul class="ex">
+    <li > مثل: أحدَ عشرَ، تسعةَ عشرَ، الثالثَ عشرَ. <span class="jar"> *الجزء الأول من اثنا عشر معرب.</span>
+    </li>
+  </ul>
+
+
+</ol>
+</section>
+
+
+<header onclick="show(this)" class="border-bottom jumbotron p-3 shadow-sm">
+  <h1>الأفعال المعربة</h1>
+</header>
+
+
+
+<section  class="disappear">
+  <p>
+    الفعل المضارع معرب ما لم تتصل به نون النسوة أو نون التوكيد، ويأتي:
+  </p>
+
+  <h3 onclick="show(this)" class="raf">مرفوعاً</h3>
+  <ol class="div1 disappear">
+    <li onclick="show(this)" id="id1">إذا لم يسبق بأداة جزم أو نصب.</li>
+    <ul class="ex">
+      <li  onclick="show(this)">الولدان يفهما<span class="raf">ن</span> الدرس.</li>
+      <small>فعل مضارع مرفوع بثبوت النون لأنه من الأفعال الخمسة.</small>
+      <li onclick="show(this)">المؤمن ينا<span class="raf">لُ</span> رحمة الله.</li>
+      <small>فعل مضارع مرفوع بالضمة.</small>
+
+</ul>
+</ol>
+
+
+<h3 onclick="show(this)" class="nas">منصوباً</h3>
+<ol class="div1 disappear">
+  <li onclick="show(this)"> إذا سُبق بأداة نصب.</li>
+  <ul class="ex">
+    <li onclick="show(this)">نريد أن نأك<span class="nas">لَ</span> منها.</li>
+    <small>فعل مضارع منصوب وعلامة نصبه الفتحة.</small>
+  </ul>
+</ol>
+
+<h3 onclick="show(this)" class="jar">مجزوماً</h3>
+<ol class="div1 disappear">
+  <li onclick="show(this)"> إذا سُبق بأداة جزم.</li>
+  <ul class="ex">
+    <li onclick="show(this)">لم ين<span class="jar">سَ</span> خالد ذكر الله.</li>
+    <small>فعل مضارع مجزوم وعلامة جزمه حذف حرف العلّة.</small>
+    <li onclick="show(this)">ألم تتناو<span class="jar">لْ</span> إفطارك؟</li>
+    <small>فعل مضارع مجزوم وعلامة جزمه السكون.</small>
+  </ul>
+</ol>
+
+
+
+</section>
+
+<header onclick="show(this)" class="border-bottom jumbotron p-3 shadow-sm">
+  <h1>الأفعال المبنية</h1>
+</header>
+
+
+
+<section  class="disappear">
+
+  <ol class="div1 ">
+    <li  id="id1">فعل الأمر</li>
+    <!-- <ul class="ex">
+      <li  onclick="show(this)">الولد<span class="raf">ا</span>ن ذكيّ<span class="raf">ا</span>ن.</li>
+      <small>مبتدأ مرفوع وعلامة رفعه الألف لأنه مثنى.<br> خبر مرفوع وعلامة رفعه الألف لأنه مثنى.</small>
+      <li onclick="show(this)">الرسو<span class="raf">لُ</span> مصطف<span class="raf">ى</span>.</li>
+      <small>مبتدأ مرفرع وعلامة رفعة الضمة الظاهرة.<br> خبر مرفوع وعلامة رفعه الضمة المقدرة لأنه اسم مقصور.</small>
+
+      <li onclick="show(this)">البنا<span class="raf">تُ</span> سعيدا<span class="raf">تٌ</span>.</li>
+      <small>مبتدأ مرفرع وعلامة رفعة الضمة الظاهرة.<br> خبر مرفوع وعلامة رفعه الضمة الظاهرة.</small>
+
+  <br />
+</ul> -->
+
+  <li id="id1">فعل الماضي.</li>
+  <!-- <ul class="ex">
+    <li  onclick="show(this)">الولد<span class="raf">ا</span>ن ذكيّ<span class="raf">ا</span>ن.</li>
+    <small>مبتدأ مرفوع وعلامة رفعه الألف لأنه مثنى.<br> خبر مرفوع وعلامة رفعه الألف لأنه مثنى.</small>
+    <li onclick="show(this)">الرسو<span class="raf">لُ</span> مصطف<span class="raf">ى</span>.</li>
+    <small>مبتدأ مرفرع وعلامة رفعة الضمة الظاهرة.<br> خبر مرفوع وعلامة رفعه الضمة المقدرة لأنه اسم مقصور.</small>
+
+    <li onclick="show(this)">البنا<span class="raf">تُ</span> سعيدا<span class="raf">تٌ</span>.</li>
+    <small>مبتدأ مرفرع وعلامة رفعة الضمة الظاهرة.<br> خبر مرفوع وعلامة رفعه الضمة الظاهرة.</small>
+
+<br />
+</ul> -->
+
+  <li id="id1">فعل المضارع الذي اتصلت به نون النسوة أو نون التوكيد.</li>
+  <!-- <ul class="ex">
+    <li  onclick="show(this)">الولد<span class="raf">ا</span>ن ذكيّ<span class="raf">ا</span>ن.</li>
+    <small>مبتدأ مرفوع وعلامة رفعه الألف لأنه مثنى.<br> خبر مرفوع وعلامة رفعه الألف لأنه مثنى.</small>
+    <li onclick="show(this)">الرسو<span class="raf">لُ</span> مصطف<span class="raf">ى</span>.</li>
+    <small>مبتدأ مرفرع وعلامة رفعة الضمة الظاهرة.<br> خبر مرفوع وعلامة رفعه الضمة المقدرة لأنه اسم مقصور.</small>
+
+    <li onclick="show(this)">البنا<span class="raf">تُ</span> سعيدا<span class="raf">تٌ</span>.</li>
+    <small>مبتدأ مرفرع وعلامة رفعة الضمة الظاهرة.<br> خبر مرفوع وعلامة رفعه الضمة الظاهرة.</small>
+
+<br />
+</ul> -->
+</ol>
+
+
+</section>
+
+</div>
+
+
+<div class="container comment" id="middle">
+  <h1 class="display-4 text-center py-1">شاركنا تعليقاتك!</h1>
+
+  <div class="jumbotron p-3 shadow-sm">
+  <form id="create-form" action="/create-item" method="POST">
+  <div>
+  الاسم: <input   required title="2 characters minimum" maxlength="20" id="create-field" name="item" autocomplete="off" class="form-control my-2" type="text" style="flex: 1;">
+  التعليق: <textarea pattern=".{2,}"   required title="2 characters minimum" maxlength="280"  rows="5" id="create-field2" name="item"  autocomplete="off" class="form-control my-2" type="text" style="flex: 1;"></textarea>
+
+  <button class="btn" style="background-color: #941E17; color: #fff;">نشر</button>
+  </div>
+  </form>
+  </div>
+
+
+
+  <ul id="item-list" class="list-group pb-5 px-0">
+  </ul>
+  </div>
+
+
+
+<script type="text/javascript">
+
+  function show(e) {
+    var x = e.nextElementSibling;
+    if (x.style.display === "none") {
+    x.style.display = "inline-block";
+  } else {
+    x.style.display = "none";
+  }
+  }
+
+  let showAll = document.getElementById("showAll")
+  let disappear = document.querySelectorAll(".disappear")
+  let ex = document.querySelectorAll(".ex")
+  let small = document.querySelectorAll("small")
+
+  function showAlll(){
+    if (showAll.innerHTML === "أظهر الكل") {
+      showAll.innerHTML = "إخفاء الكل";
+      
+      for(i = 0; i < disappear.length; i++ ){
+    disappear[i].style.display = "block"
+  }
+   for(i = 0; i < ex.length; i++){
+    ex[i].style.display = "block"
+  }
+    for(i = 0; i < small.length; i++){
+    small[i].style.display = "block"
+  }
+  } else {
+    showAll.innerHTML = "أظهر الكل"
+    for(i = 0; i < disappear.length; i++ ){
+    disappear[i].style.display = "none"
+  }
+   for(i = 0; i < ex.length; i++){
+    ex[i].style.display = "none"
+  }
+    for(i = 0; i < small.length; i++){
+    small[i].style.display = "none"
+  }
+  }  
+  }
+
+
+</script>
+
+<script data-items="<%=item %>">
+  let items = JSON.parse(document.currentScript.dataset.items);
+</script>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="/browser.js"></script>
+
+  </body>
+</html>
