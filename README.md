@@ -3,8 +3,7 @@
 
 
 ## Description
-
-
+A responsive website aimed at simplifying Arabic grammar through well-structured categories. It offers a discussion forum where users can discuss their issues.
 ## Used Technologies
 
 Node.js - Express.js - JavaScript - HTML - CSS - Bootstrap - MongoDB.
